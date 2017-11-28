@@ -59,42 +59,26 @@ eol:
 ---------------------------------------------------
 
 Los residuos protonables son:
-ASP    24
-ASP    30
-ASP    37
-ASP    40
-ASP    58
-ASP    77
-ASP    87
-ASP   117
 
 GLU     4
 GLU     5
+HIS    11
 GLU    13
 GLU    20
+ASP    24
+ASP    30
 GLU    33
+ASP    37
 GLU    39
+ASP    40
+CYS    47
 GLU    48
-GLU    73
-GLU    78
-GLU    93
-GLU    94
-
-HIS    11
-HIS    97
-
-LYS     7
-LYS    18
-LYS    27
-LYS    41
-LYS    42
 LYS    52
-LYS    59
-LYS    64
-LYS    69
-LYS    82
-LYS    99
-LYS   102
-LYS   109
-LYS   111
-LYS   114
+ASP    58
+GLU    73
+ASP    77
+GLU    78
+ASP    87
+GLU    94
+HIS    97
+ASP   117

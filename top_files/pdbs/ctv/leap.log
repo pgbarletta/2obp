@@ -1,4 +1,4 @@
-log started: Mon Nov 27 22:00:32 2017
+log started: Mon Nov 27 22:18:04 2017
 
 Log file: ./leap.log
 >>> #
@@ -706,7 +706,7 @@ Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12
 ----- Source: /home/german/amber16/dat/leap/cmd/leaprc.gaff
 ----- Source of /home/german/amber16/dat/leap/cmd/leaprc.gaff done
 >> logFile leap.log
-log started: Mon Nov 27 22:00:32 2017
+log started: Mon Nov 27 22:18:04 2017
 
 Log file: ./leap.log
 >> #
@@ -861,7 +861,7 @@ Mapped residue MET, term: Terminal/beginning, seq. number: 0 to: NMET.
 (Residue 43: GLN, Nonterminal, was not found in name map.)
 (Residue 44: LEU, Nonterminal, was not found in name map.)
 (Residue 45: TYR, Nonterminal, was not found in name map.)
-(Residue 46: CYX, Nonterminal, was not found in name map.)
+(Residue 46: CYS, Nonterminal, was not found in name map.)
 (Residue 47: GL4, Nonterminal, was not found in name map.)
 (Residue 48: CYX, Nonterminal, was not found in name map.)
 (Residue 49: ILE, Nonterminal, was not found in name map.)
@@ -980,8 +980,8 @@ Joining LYS - VAL
 Joining VAL - GLN
 Joining GLN - LEU
 Joining LEU - TYR
-Joining TYR - CYX
-Joining CYX - GL4
+Joining TYR - CYS
+Joining CYS - GL4
 Joining GL4 - CYX
 Joining CYX - ILE
 Joining ILE - LEU
@@ -1054,8 +1054,8 @@ Joining VAL - AS4
 Joining AS4 - PHE
 Joining PHE - CLEU
   total atoms in file: 969
-  Leap added 1042 missing atoms according to residue templates:
-       1042 H / lone pairs
+  Leap added 1043 missing atoms according to residue templates:
+       1043 H / lone pairs
 > # Add S bonds
 > bond mol.88.SG mol.106.SG
 > bond mol.17.SG mol.49.SG
@@ -1063,9 +1063,9 @@ Joining PHE - CLEU
 > 
 > # Now continue as normal
 > solvateoct mol TIP3PBOX 10 
-Scaling up box by a factor of 1.324021 to meet diagonal cut criterion
-  Solute vdw bounding box:              36.764 42.838 35.205
-  Total bounding box for atom centers:  69.318 69.318 69.318
+Scaling up box by a factor of 1.324000 to meet diagonal cut criterion
+  Solute vdw bounding box:              36.764 42.836 35.206
+  Total bounding box for atom centers:  69.316 69.316 69.316
       (box expansion for 'iso' is  23.2%)
   Solvent unit box:                     18.774 18.774 18.774
 The number of boxes:  x= 4  y= 4  z= 4
@@ -1197,8 +1197,8 @@ Adding box at: x=3  y=3  z=2
 Center of solvent box is: -28.161524, -28.161524, -9.387175
 Adding box at: x=3  y=3  z=3
 Center of solvent box is: -28.161524, -28.161524, -28.161524
-  Volume: 173848.078 A^3 (oct)
-  Total mass 91260.328 amu,  Density 0.872 g/cc
+  Volume: 173833.797 A^3 (oct)
+  Total mass 91261.336 amu,  Density 0.872 g/cc
   Added 4302 residues.
 > charge mol
 Total unperturbed charge:  -0.999999
@@ -1217,6 +1217,43 @@ Box:
    edge:        128.00
 Resolution:      1.00 Angstrom.
 Tree depth: 7
-grid build: 2 sec
-Volume =  4.74% of box, grid points 99412
+grid build: 1 sec
+Volume =  4.74% of box, grid points 99411
 Calculating grid charges
+charges: 110 sec
+Placed Na+ in mol at (1.63, 8.52, 7.28).
+
+Done adding ions.
+> 
+> saveamberparm mol ctv.prmtop ctv.rst7
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 372 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CLEU	1
+	CTV	1
+	NMET	1
+	WAT	4302
+  )
+ (no restraints)
+> savepdb mol ctv.pdb
+Writing pdb file: ctv.pdb
+   printing CRYST1 record to PDB file with box info
+ Converting N-terminal residue name to PDB format: NMET -> MET
+ Converting C-terminal residue name to PDB format: CLEU -> LEU
+> 
+> quit
+	Quit

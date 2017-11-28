@@ -1,4 +1,4 @@
-log started: Mon Nov 27 22:00:23 2017
+log started: Mon Nov 27 22:18:00 2017
 
 Log file: ./leap.log
 >>> #
@@ -753,7 +753,7 @@ Mapped residue MET, term: Terminal/beginning, seq. number: 0 to: NMET.
 (Residue 43: GLN, Nonterminal, was not found in name map.)
 (Residue 44: LEU, Nonterminal, was not found in name map.)
 (Residue 45: TYR, Nonterminal, was not found in name map.)
-(Residue 46: CYX, Nonterminal, was not found in name map.)
+(Residue 46: CYS, Nonterminal, was not found in name map.)
 (Residue 47: GL4, Nonterminal, was not found in name map.)
 (Residue 48: CYX, Nonterminal, was not found in name map.)
 (Residue 49: ILE, Nonterminal, was not found in name map.)
@@ -872,8 +872,8 @@ Joining LYS - VAL
 Joining VAL - GLN
 Joining GLN - LEU
 Joining LEU - TYR
-Joining TYR - CYX
-Joining CYX - GL4
+Joining TYR - CYS
+Joining CYS - GL4
 Joining GL4 - CYX
 Joining CYX - ILE
 Joining ILE - LEU
@@ -946,9 +946,9 @@ Joining VAL - AS4
 Joining AS4 - PHE
 Joining PHE - CLEU
   total atoms in file: 942
-  Leap added 1043 missing atoms according to residue templates:
+  Leap added 1044 missing atoms according to residue templates:
        1 Heavy
-       1042 H / lone pairs
+       1043 H / lone pairs
 > 
 > bond mol.88.SG mol.106.SG
 > bond mol.17.SG mol.49.SG
@@ -999,14 +999,14 @@ Tree depth: 6
 grid build: 0 sec
 Volume = 12.59% of box, grid points 33015
 Calculating grid charges
-charges: 1 sec
+charges: 2 sec
 Placed Na+ in mol at (42.38, 16.64, 40.38).
 
 Done adding ions.
 > solvateoct mol TIP3PBOX 10
-Scaling up box by a factor of 1.332551 to meet diagonal cut criterion
-  Solute vdw bounding box:              36.862 42.566 35.417
-  Total bounding box for atom centers:  69.217 69.217 69.217
+Scaling up box by a factor of 1.332532 to meet diagonal cut criterion
+  Solute vdw bounding box:              36.862 42.566 35.418
+  Total bounding box for atom centers:  69.216 69.216 69.216
       (box expansion for 'iso' is  21.5%)
   Solvent unit box:                     18.774 18.774 18.774
 The number of boxes:  x= 4  y= 4  z= 4
@@ -1138,8 +1138,8 @@ Adding box at: x=3  y=3  z=2
 Center of solvent box is: -28.161524, -28.161524, -9.387175
 Adding box at: x=3  y=3  z=3
 Center of solvent box is: -28.161524, -28.161524, -28.161524
-  Volume: 173102.040 A^3 (oct)
-  Total mass 90557.576 amu,  Density 0.869 g/cc
+  Volume: 173094.568 A^3 (oct)
+  Total mass 90558.584 amu,  Density 0.869 g/cc
   Added 4270 residues.
 > saveamberparm mol apo.prmtop apo.rst7
 Checking Unit.
